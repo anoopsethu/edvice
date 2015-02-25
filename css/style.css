@@ -163,7 +163,7 @@ Line Font
 /* ==========================================================================
 Headline
 ========================================================================== */ 
-.headline {text-align: center; position:relative; border-bottom:1px solid rgba(0,0,0,0.03); margin-bottom: 50px;}
+.headline {text-align: center; position:relative; border-bottom:1px solid rgba(0,0,0,0.07); margin-bottom: 50px;}
 .headline h1 {color: #31373a; padding-bottom: 15px; border-bottom: 2px solid #DDD; display: inline-block; font-size: 44px;}
 .headline h2 {font-size: 36px;}
 .headline p {margin-bottom: 40px; font-weight: 100; font-size: 16px; color: #2b2b2b;}
