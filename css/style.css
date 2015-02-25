@@ -431,7 +431,7 @@ Media Queries
 	.testimonial-inner img {float: none; margin:0 auto; margin-bottom: 20px;}
 	.contact-list, .quick-links {margin-bottom: 30px;}
 	.copyright {float: none;}
-	.space{margin-top:0px !important;margin-bottom:0px !important;}
+	.space{margin-top:-30px !important;margin-bottom:0px !important;}
 	.features-list{text-align:center;}
 	.features-list-left{text-align:center !important;}
 	.features-list-item {margin: 30px 0px !important;}
@@ -486,4 +486,10 @@ img{
     font-size: 20px;
     line-height: 1;
     text-align: center;
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #5FB0F6;
+    border-color: #357EBD;
 }
