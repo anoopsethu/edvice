@@ -439,10 +439,19 @@ Social Links
 /* ==========================================================================
 Media Queries
  ========================================================================== */
+ 
+ @media only screen and (min-width: 960px) and (max-width: 991px) {
+	.features-img{text-align:center;}
+	.features-img img{max-width:50%;margin-bottom:0px;}
+}
+
+
 /* ------ Tablet Portrait size to standard 960 (devices and browsers) ------*/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	img {margin: 20px auto;}
 	.img-thumbnail {margin: 0;}
+	#tutor h2, #student h2{text-align:center !important;}
+	.features-img{text-align:center;}
 }
 
 /* ------ Mobile Landscape Size to Tablet Portrait (devices and browsers) ------*/
@@ -460,6 +469,13 @@ Media Queries
 	.main-point {margin-bottom: 40px;}
 	.video-container {margin-bottom: 40px;}
 	.img-thumbnail {margin: 0;}
+	#tutor h2, #student h2{text-align:center !important;}
+	.banner-image{max-width:70%;}
+	.features-list{text-align:center;}
+	.features-list-left{text-align:center !important;}
+	.banner-content h1 {text-align:center;}
+	.banner-content p {text-align:center;}
+	.banner-content img {max-width:70%;padding-top:50px;}
 }
 
 /* ------ Mobile Portrait Size to Mobile Landscape Size (devices and browsers) ------*/
@@ -493,6 +509,8 @@ Media Queries
 .logo-big{
 	margin-bottom:30px;
 }
+
+.features-img img{margin-bottom:0px;}
 
 .banner-image{
 	max-width:100%; margin-top:30px;margin-bottom:30px;
