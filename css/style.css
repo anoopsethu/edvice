@@ -477,6 +477,7 @@ Media Queries
 	.banner-content h1 {text-align:center;}
 	.banner-content p {text-align:center;}
 	.banner-content img {max-width:70%;padding-top:50px;}
+
 }
 
 /* ------ Mobile Portrait Size to Mobile Landscape Size (devices and browsers) ------*/
