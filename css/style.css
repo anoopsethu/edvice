@@ -6,16 +6,33 @@ Description		: Cleany - Landing Page
 Website				: http://www.simplesphere.net
 ========================================================================== */ 
 
+/* =========================================================================
+Fonts
+=========================================================================== */
+
+@font-face {
+    font-family: ProximaNova-Regular;
+    src: url(../fonts/proximanova/ProximaNova-Regular.otf);
+
+}
+
+@font-face {
+    font-family: ProximaNovaCond-Regular;
+    src: url(../fonts/proximanova/ProximaNovaCond-Regular.otf);
+
+}
+
+
 /* ==========================================================================
 Basic Styling
 ========================================================================== */ 
-body { width: 100%; min-height: 100%; font-family: "Open Sans", "Raleway", Lucida Sans Unicode, Verdana, Helvetica, sans-serif; font-size: 14px; line-height: 23px; color: #7a7a7a; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
+body { width: 100%; min-height: 100%; font-family: ProximaNova-Regular, "Open Sans", "Raleway", Lucida Sans Unicode, Verdana, Helvetica, sans-serif; font-size: 14px; line-height: 23px; color: #7a7a7a; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
 
-h1, h2, h3, h4, h5, h6 { font-weight: 300; font-family: "Raleway", Lucida Sans Unicode, "Helvetica Neue", Helvetica,Arial,sans-serif; color: #1a1a1a; transition: all .50s ease-in-out; -moz-transition: all .50s ease-in-out; -webkit-transition: all .50s ease-in-out;}
+h1, h2, h3, h4, h5, h6 { font-weight: 300; font-family: ProximaNova-Regular, "Raleway", Lucida Sans Unicode, "Helvetica Neue", Helvetica,Arial,sans-serif; color: #1a1a1a; transition: all .50s ease-in-out; -moz-transition: all .50s ease-in-out; -webkit-transition: all .50s ease-in-out;}
 h1, h2, h3, h4, h5, h6 { margin-top: 0;  margin-bottom: 10px;}
 
 h1 {font-size: 44px;}
-h2 {font-weight: 700; margin-bottom: 20px; }
+h2 {font-weight: 700; margin-bottom: 20px; color:#33A6B2; }
 h3 {}
 h4 {font-size: 17px; font-weight: 700; color: #2d2d2d;}
 h5 {font-weight:600; text-transform:uppercase;}
@@ -28,7 +45,7 @@ a:hover, a:focus { text-decoration: none; color: #007DA0; outline: none; }
 
 ul { margin: 0; padding: 0; list-style: none;}
 
-::-moz-selection { text-shadow: none; background: #08b4da; color: #FFF;}
+::-moz-selection { text-shadow: none; background: #33A6B2; color: #FFF;}
 ::selection { text-shadow: none; background: #08b4da; color: #FFF; }
 
 img::selection { background: 0 0;}
@@ -38,6 +55,11 @@ hr {margin-top: 30px; margin-bottom: 40px; border-top: 1px solid #EFEFEF;}
 body { webkit-tap-highlight-color: rgba(255,255,255,.2);}
 
 form {margin-bottom: 0;}
+
+
+
+
+
 
 /* ==========================================================================
 Classes
@@ -139,14 +161,14 @@ Color Customizations
 .bg-grey {background-color: #FAF7F8;}
 .bg-grey {background-color: #FAFAFA;}
 .bg-grey2 {background-color: #F5F5F5;}
-.bg-blue {background-color: #08b4da;}
+/*.bg-blue {background-color: #08b4da;}*/
 .bg-dark {background-color: #333;}
 
 .bg-blue-pattern {background-color: #08b4da; background:url(../img/bg.png);
 background-size: cover;}
 .bg-testimonial {background:url(../img/headshot-bg.jpg);}
 
-.blue {color: #08b4da;}
+.blue {color: #33A6B2;}
 
 .white-text {color: #FFF;}
 .white-text p {color: #FFF;}
@@ -172,7 +194,7 @@ Headline
 /* ==========================================================================
  Navigation
 ========================================================================== */ 
-.menu-right {float: right;}
+.menu-right {float: right;text-transform:uppercase;}
 .navbar-inverse { margin-bottom: 0; -webkit-border-radius: 0; -moz-border-radius: 0;border-radius: 0; -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out; -moz-transition: background .5s ease-in-out,padding .5s ease-in-out; transition: background .5s ease-in-out,padding .5s ease-in-out; border: none; background-color: transparent; padding: 25px 0; }
 .navbar-inverse .navbar-nav > li > a { color: #fff; display: block; -webkit-transition: all 100ms ease-in-out; -moz-transition: all 100ms ease-in-out; -o-transition: all 100ms ease-in-out; -ms-transition: all 100ms ease-in-out; transition: all 100ms ease-in-out; }
 
@@ -190,7 +212,7 @@ Headline
 .navbar > .container .navbar-brand {margin-left: 0;}
 .navbar-brand { height:auto;}
 
-.scroll-fixed-navbar { padding: 10px 0; background-color: #FFF; -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1); box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);}
+.scroll-fixed-navbar { padding: 10px 0; background-color: #FFF; opacity:0.9; -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1); box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);}
 .scroll-fixed-navbar .navbar-nav > li > a {color: #333;}
 .scroll-fixed-navbar .navbar-nav > li > a:hover, 
 .scroll-fixed-navbar .navbar-nav > li.active > a,
@@ -205,14 +227,43 @@ Headline
 Logo
 ======================================================.==================== */ 
 .navbar-inverse .navbar-brand  {color: #FFF; font-size: 30px; font-weight: 700; padding: 0;}
-.scroll-fixed-navbar.navbar-inverse .navbar-brand  {color: #1a1a1a; font-size: 30px; font-weight: 700; padding: 0;}
+.scroll-fixed-navbar.navbar-inverse .navbar-brand  {color: #196674; font-size: 30px; font-weight: 700; padding: 0;}
 .text-logo {margin-top: 5px}
 .text-logo i {margin-right: 10px;}
 
 /* ==========================================================================
 Banner
 ========================================================================== */ 
-#banner {padding-top: 90px; padding-bottom: 70px; background: #1a1a1a; background-image: url(../img/bg.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height:100%; position: relative; background-attachment: fixed;}
+#banner {padding-top: 90px; padding-bottom: 70px; background: #1a1a1a; 
+
+/*background-image: url(../img/bg.png); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height:100%; position: relative; background-attachment: fixed;*/
+
+
+background-size: cover !important;
+background-repeat: no-repeat !important;
+background-attachment: fixed;
+
+background: #196674;
+background-image: url('../img/blur.png'); /* fallback */
+background-image: url('../img/blur.png'), -webkit-gradient(linear, left top, left bottom, from(#196674), to(#85e1eb)); /* Saf4+, Chrome */
+background-image: url('../img/blur.png'), -webkit-linear-gradient(top, #196674, #85e1eb); /* Chrome 10+, Saf5.1+ */
+background-image: url('../img/blur.png'),    -moz-linear-gradient(top, #196674, #85e1eb); /* FF3.6+ */
+background-image: url('../img/blur.png'),     -ms-linear-gradient(top, #196674, #85e1eb); /* IE10 */
+background-image: url('../img/blur.png'),      -o-linear-gradient(top, #196674, #85e1eb); /* Opera 11.10+ */
+background-image: url('../img/blur.png'),         linear-gradient(top bottom, #196674, #85e1eb); /* W3C */
+
+}
+
+.bg-blue{
+background: #196674; /* Old browsers */
+background: -moz-linear-gradient(top, #196674 0%, #33a6b2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#196674), color-stop(100%,#33a6b2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #196674 0%,#33a6b2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #196674 0%,#33a6b2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #196674 0%,#33a6b2 100%); /* IE10+ */
+background: linear-gradient(to bottom, #196674 0%,#33a6b2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#196674', endColorstr='#33a6b2',GradientType=0 ); /* IE6-9 */
+}
 
 .banner-content { clear: both; padding-top: 40px;}
 .banner-content h1 {font-size: 50px; color: #FFF;  /*border-bottom:1px solid rgba(0,0,0,0.1);*/ padding-bottom: 10px;}
@@ -432,6 +483,7 @@ Media Queries
 	.contact-list, .quick-links {margin-bottom: 30px;}
 	.copyright {float: none;}
 	.space{margin-top:-30px !important;margin-bottom:0px !important;}
+	.space p{text-align:center !important;}
 	.features-list{text-align:center;}
 	.features-list-left{text-align:center !important;}
 	.features-list-item {margin: 30px 0px !important;}
@@ -442,7 +494,9 @@ Media Queries
 }
 
 .banner-image{
-max-width:100%; margin-top:30px;margin-bottom:30px;
+	max-width:100%; margin-top:30px;margin-bottom:30px;
+	-webkit-filter: drop-shadow(0px 0px 50px #32686f);
+	filter:         drop-shadow(0px 0px 50px #32686f);
 }
 
 .nav-logo{
@@ -492,4 +546,22 @@ img{
     color: #FFF;
     background-color: #5FB0F6;
     border-color: #357EBD;
+}
+
+.get-app{
+	border-radius:5px;
+}
+
+.get-app:hover{
+	border:2px solid #fff;
+	background:#fff;
+	color:#2b2b2b;
+}
+
+.clear{
+	padding:20px;
+}
+
+.text-logo:hover{
+	opacity:0.5;
 }
