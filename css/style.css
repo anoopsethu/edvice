@@ -255,14 +255,15 @@ background-image: url('../img/blur.png'),         linear-gradient(top bottom, #1
 }
 
 .bg-blue{
-background: #196674; /* Old browsers */
-background: -moz-linear-gradient(top, #196674 0%, #33a6b2 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#196674), color-stop(100%,#33a6b2)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #196674 0%,#33a6b2 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #196674 0%,#33a6b2 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #196674 0%,#33a6b2 100%); /* IE10+ */
-background: linear-gradient(to bottom, #196674 0%,#33a6b2 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#196674', endColorstr='#33a6b2',GradientType=0 ); /* IE6-9 */
+background: #B8E4F7;
+}
+
+.bg-blue h2, .bg-blue h3{
+	color:#196674;
+}
+
+.bg-blue p{
+	color:#196674;
 }
 
 .banner-content { clear: both; padding-top: 40px;}
@@ -396,7 +397,7 @@ faq-bodys
 Footer
  ========================================================================== */
 .footer-top {background-color: #2b2b2b; padding: 70px 0;}
-.footer-sub {background-color: #242424; padding: 30px 0;}
+.footer-sub {background-color: #196674; padding: 30px 0;}
 
 .footer h3 {color: #FFF; font-weight: bold; font-size: 19px; margin-bottom:15px;}
 .footer p,
@@ -405,7 +406,7 @@ Footer
 .footer i {color: #f8f8f8;}
 
 .copyright {float: right;}
-.copyright i {color: #FF3D7F; margin:0 5px;}
+.copyright i {color: #97DD52; margin:0 5px;}
 
 .contact-list li {color: #ADADAD; margin-bottom: 5px;}
 .contact-list i {margin-right: 15px;}
@@ -504,6 +505,21 @@ Media Queries
 	.features-list-left{text-align:center !important;}
 	.features-list-item {margin: 30px 0px !important;}
 	#tutor h2, #student h2{text-align:center !important;}
+	
+	input[type="text"] {
+		width:100% !important;
+	}
+	
+	.btn-mail{
+		margin-top:20px !important;
+		margin-left:0px !important;
+		height:60px !important;width:60px !important;
+	}
+	
+	.footer p{
+		text-align:center;
+	}
+
 }
 
 .logo-big{
@@ -584,3 +600,57 @@ img{
 .text-logo:hover{
 	opacity:0.5;
 }
+
+.bg-waves{
+	  height: 500px;
+    width: 100%;
+    background: url("../img/bg-waves.png") no-repeat scroll 50% 0px transparent;
+}
+
+.bg-waves h2{
+	color:#196674;
+}
+
+
+input[type="text"] {
+	  transition: all 0.3s ease-in-out 0s;
+    height: 75px;
+    width: 50%;
+    border-radius: 7px;
+    background-clip: padding-box;
+    background-color: rgba(255, 255, 255, 0.79);
+    margin: 0px;
+    padding: 18px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    font-size: 20px;
+    color: #33A6B2;;
+    outline: medium none;
+    line-height: 34px;
+    border: 0px none;
+}
+
+.section-push-down{
+	margin-top:100px;
+}
+
+.btn-mail {
+outline: medium none;
+vertical-align: middle;
+height: 75px;
+width: 75px;
+border: 0px none;
+border-radius: 7px;
+background: none repeat scroll 0% 0% padding-box #B6F1F7;
+font-size:18px;
+margin-top: -5px;
+margin-left: 10px;
+color:#196674;
+}
+
+.btn-mail:hover{
+	background:#85E1EB;
+}
+
+
+
