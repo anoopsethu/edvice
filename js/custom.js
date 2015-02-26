@@ -27,3 +27,12 @@ $(".navbar-nav li a[href^='#']").on('click', function(e) {
         scrollTop: $(this.hash).offset().top-40
     }, 1000);
 });
+
+
+// --------------------------------------------------------
+//	Hide Navbar onclick
+// --------------------------------------------------------
+$('.nav a').on('click', function(){
+    $(".btn-navbar").click(); //bootstrap 2.x
+    $(".navbar-toggle").click() //bootstrap 3.x by Richard
+});
