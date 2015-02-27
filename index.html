@@ -18,11 +18,12 @@
 	<!-- Libs CSS -->
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/simple-line-icons.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 	
 	<!-- Template CSS -->
 	<link href="css/style.css" rel="stylesheet"> 
+	<!-- Modernizr -->
+  <script src="js/modernizr.min.js" type="text/javascript"></script>
 
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,800&amp;subsetting=all' rel='stylesheet' type='text/css'>
@@ -169,41 +170,44 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="faq-body"><!-- FAQ -->
-						<i class="line-font blue icon-question"></i><!-- Question Mark Icon -->
-						<h4>Some question goes here ?</h4><!-- Question -->
-						<div class="answer"><!-- Answer -->
-							<p>Industry when an unknown printer took a gallery.</p>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-						</div>
-					</div><!-- End FAQ -->
-					<div class="faq-body"><!-- FAQ -->
-						<i class="line-font blue icon-question"></i><!-- Question Mark Icon -->
-						<h4>What's the guarantee period ?</h4><!-- Question -->
-						<div class="answer"><!-- Answer -->
-							<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-						</div>
-					</div><!-- End FAQ -->
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="faq-body"><!-- FAQ -->
-						<i class="line-font blue icon-question"></i><!-- Question Mark Icon -->
-						<h4>Why not use an accordion ?</h4><!-- Question -->
-						<div class="answer"><!-- Answer -->
-							<p>Lorem Ipsum is the industry's standard dummy text.</p>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-						</div><!-- End FAQ -->
-					</div>
-					<div class="faq-body"><!-- FAQ -->
-						<i class="line-font blue icon-question"></i><!-- Question Mark Icon -->
-						<h4>What is the refund policy ?</h4><!-- Question -->
-						<div class="answer"><!-- Answer -->
-							<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-						</div><!-- End FAQ -->
-					</div>
+				<div class="col-md-12 col-sm-12">
+										<div class="flexslider group">
+                        <ul class="slides group">
+                            <li class="group">
+																<h4>Some question goes here ?</h4>
+																<p>Pennies is a brilliant idea, and it looks great too. I can't wait to try it out!</p>
+
+                            </li>
+                            <li class="group">
+																<h4>What's the guarantee period ?</h4>
+																<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+                            </li>
+                            <li class="group">
+																<h4>Why not use an accordion ?</h4>
+																<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type.</p>
+
+                            </li>
+														<li class="group">
+																<h4>What is the refund policy ?</h4>
+																<p>Pennies is a brilliant idea, and it looks great too. I can't wait to try it out!</p>
+
+                            </li>
+                            <li class="group">
+																<h4>Why is the sky blue in colour ?</h4>
+																<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+                            </li>
+                            <li class="group">
+																<h4>Do you watch Game of Thrones ?</h4>
+																<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type.</p>
+
+                            </li>
+                        </ul>
+                    </div>
+
+				
+				
 				</div>
 			</div>
 		</div>
@@ -282,9 +286,12 @@
 	<!-- Start Js Files -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script><!--jQuery is a Javascript library that greatly reduces the amount of code that you must write.-->
 	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')</script>
+	
+	<script defer src="js/jquery.flexslider.js"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script><!--Packed with many functionalies such as carousel slider, responsivity, tabs, drop downs, buttons, and many other features-->
-	<script src="js/modernizr.min.js" type="text/javascript"></script><!--Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.-->
-	<script src="js/jquery.prettyPhoto.js" type="text/javascript" ></script><!-- Script for Lightbox Image  -->
+	
+	<!--Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.-->
+	
 	<script src="js/custom.js" type="text/javascript"></script><!-- Script File containing all customizations  -->
 	<!-- End Js Files  -->
 
