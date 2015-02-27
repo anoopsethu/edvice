@@ -12,15 +12,8 @@ Fonts
 
 @font-face {
     font-family: ProximaNova-Regular;
-    src: url(../fonts/proximanova/ProximaNova-Regular.otf) format('truetype'),
-		url('ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
-
-}
-
-@font-face {
-    font-family: ProximaNovaCond-Regular;
-    src: url(../fonts/proximanova/ProximaNovaCond-Regular.otf);
-
+    src: url(../fonts/proximanova/proximanova-reg-webfont.ttf) format('truetype'),
+		url('../fonts/proximanova/proximanova-reg-webfont.svg#ProximaNovaRegular') format('svg');
 }
 
 @font-face {
@@ -213,7 +206,7 @@ Headline
 .navbar-toggle:focus,
 .navbar-toggle:active { outline: 0;}
 
-.navbar-inverse .navbar-toggle { background: #08b4da; border: none;}
+.navbar-inverse .navbar-toggle { /*background: #08b4da;*/ border: none;}
 .navbar-nav {margin: 0;}
 .scroll-fixed-navbar {padding-bottom:0;}
 
@@ -479,8 +472,11 @@ Media Queries
 
 /* ------ Mobile Landscape Size to Tablet Portrait (devices and browsers) ------*/
 @media only screen and (max-width: 767px) {
-	.navbar-inverse {background-color: #FFF; padding:0;}
-	.navbar > .container .navbar-brand {margin-left: 15px; color: #1a1a1a; margin-top: 15px;}
+	.navbar-inverse {background-color: transparent; padding:0;}
+	.navbar > .container .navbar-brand {margin-left: 15px; color: #fff; margin-top: 15px;}
+	.scroll-fixed-navbar{background:#fff;opacity:0.9;}
+	.scroll-fixed-navbar .text-logo{color:#000 !important;}
+	.scroll-fixed-navbar .icon-bar{background-color:#5f5f5f !important;}
 	.menu-right {float: none;}
 	.navbar-inverse .navbar-nav > li > a {color: #1a1a1a;}
 	.navbar-inverse .navbar-nav > .active > a, 
@@ -545,6 +541,11 @@ Media Queries
 	
 	.form-wrapper{
 	text-align:center;
+}
+
+.navbar-inverse .navbar-collapse {
+    border-color: rgba(0, 0, 0, 0.1);
+    background: none repeat scroll 0% 0% #FFF;
 }
 	
 }
@@ -711,6 +712,10 @@ footer p{
 .play-img{
 	/*margin-right:10px;*/
 	/*display:inline-block;*/
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
 }
 
 
