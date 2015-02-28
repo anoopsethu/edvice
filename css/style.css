@@ -542,13 +542,14 @@ Media Queries
 	#tutor h2, #student h2{text-align:center !important;}
 	
 	input[type="text"] {
-		width:100% !important;
+		height:50px !important;
+		width:70% !important;*/
 	}
 	
 	.btn-mail{
-		margin-top:20px !important;
-		margin-left:0px !important;
-		height:60px !important;width:60px !important;
+		margin-left:5px !important;
+		vertical-align:middle;
+		height:50px !important;width:50px !important;
 	}
 	
 	.form-wrapper{
@@ -655,7 +656,7 @@ img{
 
 input[type="text"] {
 	  transition: all 0.3s ease-in-out 0s;
-    height: 75px;
+    height: 65px;
     width: 50%;
     border-radius: 4px;
     background-clip: padding-box;
@@ -681,11 +682,15 @@ input[type="text"] {
 	margin-top:100px;
 }
 
+.submit-box{
+	margin-top:30px;
+}
+
 .btn-mail {
 outline: medium none;
 vertical-align: middle;
-height: 75px;
-width: 75px;
+height: 65px;
+width: 65px;
 border: 0px none;
 border-radius: 4px;
 background: none repeat scroll 0% 0% padding-box #B6F1F7;
@@ -696,20 +701,20 @@ color:#196674;
 transition:all 0.3s ease-in-out 0s;
 }
 
-.btn-mail:hover{
-	background:#85E1EB;
+.btn-mail:hover, .banner-content .btn-mail:hover{
+	background:#97DD52;
+	color:#fff;
 }
 
 .banner-content .btn-mail{
-	background:#85E1EB;
-	height:50px;
-	width:50px;
-	line-height:0px;
+background: none repeat scroll 0% 0% #B6F1F7;
+height: 50px;
+width: 50px;
+line-height: 0px;
+vertical-align: middle;
 }
 
-.banner-content .btn-mail:hover{
-	background:#fff;
-}
+
 
 footer p{
 	text-align:center;
