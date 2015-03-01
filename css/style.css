@@ -495,6 +495,9 @@ Media Queries
 	.navbar-inverse .navbar-nav > .active > a:hover, 
 	.navbar-inverse .navbar-nav > .active > a:focus,
 	.navbar-inverse .navbar-nav > li > a:hover { color: #00A8D6;}
+	
+
+	
 	img {display: block; margin: 20px auto;}
 	.section {padding: 70px 0;}
 	.main-point {margin-bottom: 40px;}
@@ -506,7 +509,7 @@ Media Queries
 	.features-list-left{text-align:center !important;}
 	.banner-content h1 {text-align:center;}
 	.banner-content p {text-align:center;}
-	.banner-content img {max-width:70%;padding-top:20px;}
+	banner-content img {max-width:70%;padding-top:20px;}
 	
 	.form-wrapper{
 	text-align:center;
@@ -541,6 +544,9 @@ Media Queries
 	.features-list-item {margin: 30px 0px !important;}
 	#tutor h2, #student h2{text-align:center !important;}
 	
+	.plane-icon {
+		margin-top:8px !important;
+	}
 
 	
 	input[type="text"] {
@@ -981,7 +987,7 @@ footer p{
 
 .plane-icon{
 	max-width: 90% !important;
-	margin-top:7px !important;
+	margin-top:5px;
 	padding-top: 0px !important;
 }
 
