@@ -423,12 +423,13 @@ faq-bodys
 /* ==========================================================================
 Footer
  ========================================================================== */
-.footer-top {background-color: #2b2b2b; padding: 70px 0;}
+.footer-top {background-color: #196674; padding: 70px 0;}
 .footer-sub {background-color: #196674; padding: 30px 0;}
 
 .footer h3 {color: #FFF; font-weight: bold; font-size: 19px; margin-bottom:15px;}
 .footer p,
 .footer a {color: #ADADAD; margin-bottom: 10px;}
+.footer a {display:inline-block;}
 .footer li {padding: 3px 0; font-size: 14px;}
 .footer i {color: #f8f8f8;}
 
@@ -553,13 +554,18 @@ Media Queries
 	.img-thumbnail {margin: 0;}
 	.testimonial-inner img {float: none; margin:0 auto; margin-bottom: 20px;}
 	.contact-list, .quick-links {margin-bottom: 30px;}
-	.copyright {float: none;}
+	.copyright {float: none; text-align:center;}
+	.footer-left{text-align:center !important;}
 	.space{margin-top:-30px !important;margin-bottom:0px !important;}
 	.space p{text-align:center !important;}
 	.features-list{text-align:center;}
 	.features-list-left{text-align:center !important;}
 	.features-list-item {margin: 30px 0px !important;}
 	#tutor h2, #student h2{text-align:center !important;}
+	
+	.banner-content img{
+		margin-top:30px;
+	}
 	
 	.plane-icon {
 		margin-top:8px !important;
@@ -600,7 +606,7 @@ Media Queries
 .features-img img{margin-bottom:0px;}
 
 .banner-image{
-	max-width:100%; margin-top:30px;margin-bottom:30px;
+	/*max-width:65%; /*margin-top:30px;*/margin-bottom:30px;
 	-webkit-filter: drop-shadow(0px 0px 50px #32686f);
 	filter:         drop-shadow(0px 0px 50px #32686f);
 }
@@ -746,7 +752,7 @@ vertical-align: middle;
 
 
 footer p{
-	text-align:center;
+	/*text-align:center;*/
 }
 
 .header-sub{
@@ -1029,4 +1035,13 @@ footer p{
 .feature_img{
     margin-left: auto;
     margin-right: auto;
+}
+
+.social-icons{
+	background:#33A6B2;
+	transtition:all 0.5s ease-in-out;
+}
+
+.social-icons:hover{
+	opacity:0.5;
 }
