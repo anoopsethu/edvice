@@ -42,7 +42,12 @@ $('.nav a').on('click', function(){
 //	Flex Slider 
 // --------------------------------------------------------
 $(window).load(function() {
-  $('.flexslider').flexslider({
+  $('#faq-slider').flexslider({
+    animation: "slide",
+    animationLoop: true
+  });
+	
+	$('#features-slider').flexslider({
     animation: "slide",
     animationLoop: true
   });
